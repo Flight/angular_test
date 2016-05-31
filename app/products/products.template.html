@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th class="column-thumbnail">
+                Thumbnail
+            </th>
+            <th>
+                Name
+            </th>
+            <th class="column-price">
+                Price
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in $ctrl.products">
+            <td class="column-thumbnail text-center"><img src="{{ product.thumbnailImage }}" alt="{{ product.displayName }}" width="100"></td>
+            <td>{{ product.displayName }}</td>
+            <td class="column-price">{{ product.pricing.formattedListPrice }}</td>
+        </tr>
+    </tbody>
+</table>

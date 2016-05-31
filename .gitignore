@@ -1,0 +1,10 @@
+typings
+app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+build
+files
+tmp
+.DS_Store 
+*.sublime*

@@ -1,0 +1,16 @@
+@import "libs/all";
+@import "mixins/all";
+@import "components/all";
+
+.table-products {
+    .column-thumbnail {
+        width: 100px;
+    }
+    .column-price {
+        width: 50px;
+    }
+    td {
+        height: 120px;
+        vertical-align: middle !important;
+    }
+}
