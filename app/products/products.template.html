@@ -1,19 +1,19 @@
-<table>
+<table class="table table-striped table-hover table-products">
     <thead>
         <tr>
             <th class="column-thumbnail">
                 Thumbnail
             </th>
-            <th>
+            <th ng-click="$ctrl.sortType = 'displayName'; $ctrl.sortReverse = !sortReverse"> <!--  ng-model="$ctrl.orderProp" -->
                 Name
             </th>
-            <th class="column-price">
+            <th ng-click="$ctrl.sortType = 'pricing.formattedListPrice'; $ctrl.sortReverse = !sortReverse" class="column-price">
                 Price
             </th>
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="product in $ctrl.products">
+        <tr ng-repeat="product in $ctrl.products | orderBy:$ctrl.sortType:$ctrl.sortReverse">
             <td class="column-thumbnail text-center"><img src="{{ product.thumbnailImage }}" alt="{{ product.displayName }}" width="100"></td>
             <td>{{ product.displayName }}</td>
             <td class="column-price">{{ product.pricing.formattedListPrice }}</td>

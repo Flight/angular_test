@@ -1,26 +1,27 @@
 {
-    "name": "angular_test",
-    "version": "1.0.0",
-    "description": "",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Flight/angular_test.git"
-    },
-    "main": "index.html",
-    "scripts": {
-        "test": "gulp test"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "angular": "^1.5.6"
-    },
-    "devDependencies": {
-        "bootstrap-sass": "^3.3.6",
-        "gulp": "^3.9.1",
-        "browser-sync": "^2.12.8",
-        "gulp-autoprefixer": "^3.1.0",
-        "gulp-sass": "^2.3.1",
-        "gulp-sourcemaps": "^1.6.0"
-    }
+  "name": "angular_test",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flight/angular_test.git"
+  },
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-ui-bootstrap": "^1.3.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.12.8",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }
